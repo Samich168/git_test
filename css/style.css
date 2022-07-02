@@ -159,4 +159,13 @@ img {
 
 .star {
   width: 8px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-button {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

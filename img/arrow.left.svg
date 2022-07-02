@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="Vector_Stroke_" data-name="Vector (Stroke)" class="cls-1" d="M1743.71,568.293a1,1,0,0,1,0,1.414l-5.3,5.293,5.3,5.293a1,1,0,0,1-1.42,1.414l-6-6a1,1,0,0,1,0-1.414l6-6A1.006,1.006,0,0,1,1743.71,568.293Z" transform="translate(-1736 -568)"/>
+</svg>
