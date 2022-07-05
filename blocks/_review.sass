@@ -1,0 +1,58 @@
+.review
+    background-color: #F5FAFE
+    padding-top: 30px
+    padding-bottom: 80px
+    &-button--prev
+            background-image: url("../img/review_left.svg")
+            background-repeat: no-repeat
+            background-position: center
+            left: 0
+    &-button--next
+            background-image: url("../img/review_right.svg")
+            background-repeat: no-repeat
+            background-position: center
+            right: 0
+    &-wrapper
+        display: flex
+        justify-content: center
+        margin-top: 60px
+    &__title
+        font-weight: bold
+        font-size: 36px
+        text-transform: uppercase
+        text-align: center
+    &-card
+        width: 730px
+        height: 325px
+        text-align: center
+        background-color: #fff
+        border-radius: 5px
+        position: relative
+        
+            
+        &__text
+            padding: 0 96px
+            font-size: 12px
+        &__name
+            margin: 80px 0 10px 0
+            font-weight : bold
+            font-size: 12px
+            color: $red-color
+        &__date
+            font-size: 10px
+        &__img
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+        &__photo
+            position: absolute
+            top: -14%
+
+            right: 50%
+            transform: translateX(50%)
+.review-swiper
+    width: 1100px
+    margin-top: 70px
+
+    

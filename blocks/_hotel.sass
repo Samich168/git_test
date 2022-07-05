@@ -1,5 +1,5 @@
 .hotel
-    margin-top: 20px
+    margin-top: 30px
     &-info
         display: flex
         align-items: center
@@ -16,10 +16,15 @@
         margin-left: 14px
     &-description
         margin-top: 15px
+        margin-bottom: 25px
     &-wrapper
         display: flex
         flex-wrap: wrap
         align-items: center
+    &-grid
+        display: flex
+        align-items: center
+        justify-content: space-between
 
 
 .rating
@@ -42,11 +47,94 @@
     width: 8px
 
 .swiper
-    width: 600px
-    height: 300px
+    width: 728px
+    height: 450px
+    position: relative
+    border-radius: 10px 
+    &__img
+        height: 450px
     &-button
+        position: absolute
         width: 30px
         height: 30px
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 99
+        border: none
+        background-color: transparent
+        cursor: pointer
+        &--prev
+            background-image: url("../img/arrow.left.svg")
+            background-repeat: no-repeat
+            background-position: center
+            left: 0
+            margin-left: 18px
+        &--next
+            background-image: url("../img/arrow-right.svg")
+            right: 0
+            background-repeat: no-repeat
+            background-position: center
+            margin-right: 18px
 
+    
+.booking
+    width: 350px
+    height: 210px
+    background-color: $dark-blue
+    color: white
+    padding: 20px
+    border-radius: 10px
+    margin: 0
+    &__info
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__button
+        width: 295px
+        height: 45px
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        background-color: $red-color
+        margin-top: 15px
+        font-size: 14px
+        color: white
 
+.price
+    &__start
+        font-size: 10px
+    &__tag
+        font-size: 24px
+    &-per-room
+        font-size: 12px
+        
+    
+.person-room
+    &__text
+        font-size: 14px
+        margin-top: 8px
+    &__icon
+        width: 12px
+    &__description
+        font-size: 12px
+
+.call-center
+    margin-top: 15px 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text
+        font-size: 18px
+    &__img
+        width: 14px
+    &__number
+        text-decoration: none
+        color: white
+        font-size: 18px
+
+.card
+    width: 350px
+    height: 210px
+    margin-top: 15px
+    border-radius: 10px
 
