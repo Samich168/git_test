@@ -39,7 +39,7 @@ img {
   overflow: hidden;
 }
 .navbar_input {
-  width: 285px;
+  width: 350px;
   height: 40px;
   padding-left: 10px;
   border-radius: 5px;
@@ -54,6 +54,7 @@ img {
   color: white;
   border: none;
   position: absolute;
+  right: 0;
 }
 .navbar_element_2 {
   margin-right: auto;
@@ -693,4 +694,76 @@ img {
   bottom: 32px;
   right: 140px;
   width: 100px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .navbar_element_2 {
+    margin: 0;
+  }
+  .navbar_img {
+    width: 130px;
+  }
+
+  .header_element {
+    font-size: 12px;
+  }
+
+  .hotel-grid {
+    flex-wrap: wrap;
+  }
+  .hotel-left {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 0;
+    width: 350px;
+  }
+
+  .swiper {
+    width: 700px;
+  }
+
+  .booking {
+    width: 340px;
+  }
+  .booking__info {
+    width: 100%;
+  }
+
+  .other {
+    display: none;
+  }
+
+  .sub {
+    margin-top: 40px;
+  }
+
+  .review {
+    padding-bottom: 40px;
+  }
+  .review-card {
+    width: 580px;
+  }
+
+  .activity-wrapper {
+    flex-wrap: wrap;
+  }
+  .activity-card {
+    width: 340px;
+    height: 255px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .activity-card__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
