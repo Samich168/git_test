@@ -50,6 +50,10 @@
     &-search
         &-contact
             color: #BDBDBD
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
     &__input
         &-contact
             width: 255px
@@ -66,22 +70,25 @@
             border-radius: 5px
             border: none
             padding-left: 20px
-    &__button
-        width: 160px
-        height: 50px
-        margin: 20px 0
-        background-color: $red-color
-        border-radius: 5px
-        border: none
-        color: white
     &-send__button
         display: flex
         justify-content: space-between
         align-items: center
 
             
-
-
+.send__button
+    width: 160px
+    height: 50px
+    margin: 20px 0
+    background-color: $red-color
+    border-radius: 5px
+    border: none
+    color: white
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 300px
 
 .footer-list--social
     grid-row-start: 2

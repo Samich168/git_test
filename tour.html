@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
@@ -121,7 +122,7 @@
                                 <span class="call-center__num">12100</span>
                             </a>
                         </div>
-                        <button class="booking__button">View Other Options</button>
+                        <button data-toggle="modal_window" class="booking__button">View Other Options</button>
                     </div>
                     <div class="card">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aadb8111606c5853d84910d3bf55a5125ef3994212fc79f8f16166b12abc6bd6c&amp;width=350&amp;height=210&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -420,26 +421,71 @@
                     <div class="footer-buttons">
                         <h1 class="footer-list__title">Send us a message</h1>
                         <div class="footer-contact__buttons">
-                            <form class="search footer-search-contact" action="" method="get">
-                                <input autocomplete="off" class="footer__input-contact" name="s" placeholder="Your Full Name*" type="search">
+                            <form action="send.php" method="POST" class="search footer-search-contact">
+                                <input autocomplete="off" 
+                                class="footer__input-contact" 
+                                name="name" 
+                                placeholder="Your Full Name*" 
+                                type="text">
+            
+                                <input autocomplete="off" 
+                                class="footer__input-contact" 
+                                name="phone" 
+                                placeholder="Phone Number*" 
+                                type="text">
+
+                                <input autocomplete="off" class="footer__input-message" 
+                                name="message" 
+                                placeholder="Message" 
+                                type="text">
+                                <button class="send__button" type="submit">Send</button>
+                                <p class="footer-buttons-fields">* Required Fields</p>
                             </form>
-                            <form class="search footer-search-contact" action="" method="get">
-                                <input autocomplete="off" class="footer__input-contact" name="s" placeholder="Phone Number*" type="search">
-                            </form>
-                        </div>
-                        <div class="">
-                            <form class="search footer-search-contact" action="" method="get">
-                                <input autocomplete="off" class="footer__input-message" name="s" placeholder="Message" type="search">
-                            </form>
-                        </div>
-                        <div class="footer-send__button">
-                            <button class="footer__button">Send</button>
-                            <p class="footer-buttons-fields">* Required Fields</p>
                         </div>
                     </div>
             </div>
         </div>
     </section>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <a href="" data-toggle="modal__closer" class="modal__close-link"><img class="modal__close" src="img/close.svg" alt=""></a>
+            <h3 class="modal__title">Booking</h3>
+            <div class="footer-contact__buttons">
+                <form action="send.php" method="POST" class="search modal-search">
+                    <input autocomplete="off" 
+                        class="modal__input" 
+                        name="name" 
+                        placeholder="Your Full Name*" 
+                        type="text">
+            
+                    <input autocomplete="off" 
+                        class="modal__input" 
+                        name="phone" 
+                        placeholder="Phone Number*" 
+                        type="text">
+
+                    <input autocomplete="off" 
+                        class="modal__input" 
+                        name="message" 
+                        placeholder="Email*" 
+                        type="text">
+
+                    <input autocomplete="off" 
+                        class="modal__input modal__input-message" 
+                        name="phone" 
+                        placeholder="Message" 
+                        type="text">
+                    
+                <div class="send__button-wrapper">
+                    <button class="send__button" type="submit">Send</button>
+                    <p class="footer-buttons-fields">* Required Fields</p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     
